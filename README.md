@@ -1,5 +1,5 @@
 # Desafios-HTML-Rocketseat
- Uma série de desafios básicos para praticar conceitos de HTML
+ Uma série de desafios para praticar conceitos de HTML
 
 - Glossário
 - Formulário de contato
