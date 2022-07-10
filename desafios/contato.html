@@ -17,28 +17,42 @@
             <fieldset>
                 <legend>Entre em contato</legend>
 
-                <label for="assunto"><strong>Assunto</strong></label> 
-                <select name="assunto" id="assunto">
-                    <option value="Suporte">Suporte</option>
-                    <option value="Suporte">Sugestão</option>
-                    <option value="Suporte">Reclamação</option>
-                </select>
-                <br>
-                <label for="nome">Nome Completo:</label>
-                <input id="nome" type="text" >
-                <br>
-                <label for="email">E-mail:</label>
-                <input id="email" type="email">
-                <br>
-                <label for="mensagem">Mensagem:</label><br>
-                <textarea name="mensagem" id="" cols="30" rows="10"></textarea>
-                <br>
-                <input id="termos" type="checkbox"><label for="termos">aceito receber novidades por E-mail</label>
+                <!--Foi usado tabela para organizar melhor o conteúdo em tela-->
+                <table>
+                    <tr>
+                        <td><label for="assunto"><strong>Assunto:</strong></label></td>
+                        <td>
+                            <select required name="assunto" id="assunto">
+                                <option value="Suporte">Suporte</option>
+                                <option value="Suporte">Sugestão</option>
+                                <option value="Suporte">Reclamação</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="nome"><b>Nome Completo:</b></label></td>
+                        <td><input required placeholder="Digite seu nome completo" maxlength="60" id="nome" type="text" size="40" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email"><b>E-mail:</b></label></td>
+                        <td><input required placeholder="email@seudominio.com" id="email" type="email" size="40"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="mensagem"><b>Mensagem:</b></label></td>
+                        <td><textarea placeholder="Deixe-nos uma mensagem" name="mensagem" id="" cols="40" rows="10"></textarea></td>                        
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input required id="termos" type="checkbox"> <label for="termos">aceito receber novidades por E-mail</label>
+                        </td>                        
+                    </tr>
+                    <tr>
+                        <td><button>Enviar</button></td>
+                    </tr>
+                </table>         
             </fieldset>
-        </form>
-
-
-        
+        </form>        
     </div>
 </body>
 </html>
